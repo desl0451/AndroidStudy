@@ -23,7 +23,7 @@
         <!--第一本书章节目录-->
         <activity android:name=".Book1.Book1ChapterDirectory">
             <intent-filter>
-                <action android:name="book1chapterdirectory" />
+                <action android:name="book1_chapter_directory" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -32,7 +32,7 @@
         <!--第二本书章节目录-->
         <activity android:name=".Book2.Book2ChapterDirectory">
             <intent-filter>
-                <action android:name="book2chapterdirectory" />
+                <action android:name="book2_chapter_directory" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -196,7 +196,7 @@
             </intent-filter>
         </activity>
 
-        <!--示例18 列表视图复选效果-->
+        <!--示例19 列表视图复选效果-->
         <activity android:name=".Book1.Chapter03.SL03_06.Chapter03_03_19">
             <intent-filter>
                 <action android:name="Book1_Chapter03_03_19" />
@@ -204,7 +204,46 @@
             </intent-filter>
         </activity>
 
+        <!--示例20-->
+        <activity android:name=".Book1.Chapter03.SL03_06.Chapter03_03_20">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_20" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
+
+        <!--示例21-->
+        <activity android:name=".Book1.Chapter03.SL03_07.Chapter03_03_21">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_21" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例22-->
+        <activity android:name=".Book1.Chapter03.SL03_08.Chapter03_03_22">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_22" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例23-->
+        <activity android:name=".Book1.Chapter03.SL03_09.Chapter03_03_23">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_23" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例24-->
+        <activity android:name=".Book1.Chapter03.SL03_10.Chapter03_03_24">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_24" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->

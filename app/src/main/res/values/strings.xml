@@ -42,10 +42,11 @@
     <string name="Book1_Chapter03_03_17">03.03.17列表选择框</string>
     <string name="Book1_Chapter03_03_18">03.03.18列表视图</string>
     <string name="Book1_Chapter03_03_19">03.03.19列表视图复选效果</string>
-
-
-
-
+    <string name="Book1_Chapter03_03_20">03.03.20让Activity继承ListActivity实现</string>
+    <string name="Book1_Chapter03_03_21">03.03.21日期、时间拾取器</string>
+    <string name="Book1_Chapter03_03_22">03.03.22计时器</string>
+    <string name="Book1_Chapter03_03_23">03.03.23范例1:实现跟踪鼠标单击状态的图片按钮</string>
+    <string name="Book1_Chapter03_03_24">03.03.24范例2:实现带图标的ListView</string>
 
     <!-- #####################################################################-->
 

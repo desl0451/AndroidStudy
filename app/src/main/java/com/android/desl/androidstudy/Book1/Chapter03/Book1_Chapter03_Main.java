@@ -223,6 +223,61 @@ public class Book1_Chapter03_Main extends AppCompatActivity {
             }
         });
 
+        //Chapter03_03_20
+        Button Book1_Chapter03_03_20 = (Button) this.findViewById(R.id.Book1_Chapter03_03_20);
+        Book1_Chapter03_03_20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_20");
+                startActivity(intent);
+            }
+        });
+
+
+        //Chapter03_03_21
+        Button Book1_Chapter03_03_21 = (Button) this.findViewById(R.id.Book1_Chapter03_03_21);
+        Book1_Chapter03_03_21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_21");
+                startActivity(intent);
+            }
+        });
+
+        //Chapter03_03_22
+        Button Book1_Chapter03_03_22 = (Button) this.findViewById(R.id.Book1_Chapter03_03_22);
+        Book1_Chapter03_03_22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_22");
+                startActivity(intent);
+            }
+        });
+
+        //Chapter03_03_23
+        Button Book1_Chapter03_03_23 = (Button) this.findViewById(R.id.Book1_Chapter03_03_23);
+        Book1_Chapter03_03_23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_23");
+                startActivity(intent);
+            }
+        });
+
+        //Chapter03_03_24
+        Button Book1_Chapter03_03_24 = (Button) this.findViewById(R.id.Book1_Chapter03_03_24);
+        Book1_Chapter03_03_24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_24");
+                startActivity(intent);
+            }
+        });
 
     }
 }

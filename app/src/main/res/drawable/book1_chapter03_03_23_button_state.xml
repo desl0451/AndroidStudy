@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/book1_chapter03_03_23_start_a" android:state_pressed="true" />
+    <item android:drawable="@drawable/book1_chapter03_03_23_start_b" android:state_pressed="false" />
+</selector>
