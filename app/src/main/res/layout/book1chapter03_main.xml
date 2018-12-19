@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--###########################################-->
+
+            <!--第3章各练习按钮-->
+            <Button
+                android:id="@+id/Book1_Chapter03_01_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_01" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_02" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_03" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_04" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_05" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_06" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_07" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_08" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_09" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_10" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_11" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_12" />
+
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_13" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_14" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_15" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_01_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_16" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_03_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_03_17" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_03_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_03_18" />
+
+            <Button
+                android:id="@+id/Book1_Chapter03_03_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_03_19" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

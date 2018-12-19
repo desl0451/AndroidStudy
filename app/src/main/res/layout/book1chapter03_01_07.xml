@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book1_chapter03_01_04_background"
+    android:foreground="@drawable/book1_chapter03_03_11_icon"
+    android:foregroundGravity="bottom|right">
+    <!--添加居中显示的红色背景的TextView,将显示在最下层-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="#FFFF0000"
+        android:text="红色背景的TextView" />
+    <!--添加居中显示的橙色背景的TextView,将显示在中间层-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="#FFFF6600"
+        android:text="橙色背景的TextView" />
+    <!--添加居中显示的黄色背景的TextView,将显示在最上层-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="#FFFFEE00"
+        android:text="黄色背景的TextView" />
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爱好："
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/like1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体育" />
+
+    <CheckBox
+        android:id="@+id/like2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐" />
+
+    <CheckBox
+        android:id="@+id/like3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美术" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+</LinearLayout>

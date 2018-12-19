@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="Book1_Chapter03_01_17_Ctype">
+        <item>身份证</item>
+        <item>学生证</item>
+        <item>军人证</item>
+        <item>工作证</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="Book1_Chapter03_01_18_Ctype">
+        <item>情景模式</item>
+        <item>主题模式</item>
+        <item>手机</item>
+        <item>程序管理</item>
+        <item>通话设置</item>
+        <item>连接功能</item>
+    </string-array>
+
+    <string-array name="Book2Chapter020205Books">
+        <item>疯狂Java讲义</item>
+        <item>疯狂Ajax讲义</item>
+        <item>疯狂XML讲义</item>
+        <item>疯狂Android讲义</item>
+    </string-array>
+
+
+</resources>

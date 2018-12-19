@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.desl.androidstudy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--##################################################################-->
+        <!--$$$$$$$$$$$$$$$$    1.书目录   $$$$$$$$$$$$$$$$-->
+        <activity android:name=".BookCatalog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--##################################################################-->
+        <!--$$$$$$$$$$$$$$$$    1.章节目录   $$$$$$$$$$$$$$$$-->
+        <!--第一本书章节目录-->
+        <activity android:name=".Book1.Book1ChapterDirectory">
+            <intent-filter>
+                <action android:name="book1chapterdirectory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--第二本书章节目录-->
+        <activity android:name=".Book2.Book2ChapterDirectory">
+            <intent-filter>
+                <action android:name="book2chapterdirectory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--第一本书-->
+        <!--1.1.第三章目录-->
+        <activity android:name=".Book1.Chapter03.Book1_Chapter03_Main">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+
+        <!--1.2.3第三章内容-->
+        <!--示例 1-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_01">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_01" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 2-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_02">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_02" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 3-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_03">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_03" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 4-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_04">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_04" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 5-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_05">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_05" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 6-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_06">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_06" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 7-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_07">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_07" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--示例 8-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_08">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_08" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例 9-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_09">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_09" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例10-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_01_10">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_10" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例11-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_11">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_11" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例12-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_12">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_12" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例13-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_13">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_13" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例14-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_14">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_14" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--示例15-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_15">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_15" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例16-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_16">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_01_16" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例17 Spinner的使用-->
+        <activity android:name=".Book1.Chapter03.SL03_05.Chapter03_03_17">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_17" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--示例18 列表视图-->
+        <activity android:name=".Book1.Chapter03.SL03_06.Chapter03_03_18">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_18" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例18 列表视图复选效果-->
+        <activity android:name=".Book1.Chapter03.SL03_06.Chapter03_03_19">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_19" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+
+
+        <!--##################################################################-->
+        <!--第二本书 疯狂Android-->
+        <!--第二章内容-->
+        <!--1.1.第二章目录-->
+        <activity android:name=".Book2.Chapter02.Book2_Chapter02_Main">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--##################################################################-->
+
+        <!--第二章示例内容-->
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo01_CodeView.Chapter02_02_01">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_01" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo02_MixView.Chapter02_02_02">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_02" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo03_CustomView.Chapter02_02_03">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_03" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo04_LinearLayoutTest.Chapter02_02_04">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_04" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo05_TableLayoutTest.Chapter02_02_05">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_05" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo06_FrameLayoutTest.Chapter02_02_06">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_06" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo07_FrameLayoutTest.Chapter02_02_07">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_07" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--实例计算器-->
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo08_GridLayoutTest.Chapter02_02_08">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_08" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--登录界面-->
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo09_AbsoluteLayoutTest.Chapter02_02_09">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_09" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--不同颜色、字体、带下划线-->
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo10_TextViewTest.Chapter02_02_10">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_10" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--不同颜色、字体、带下划线-->
+        <activity android:name=".Book2.Chapter02.SL2_2.Demo11_TextViewTest2.Chapter02_02_11">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_02_11" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--##################################################################################-->
+        <!--codes_02_2.3-->
+        <!--用户友好的输入界面-->
+        <activity android:name=".Book2.Chapter02.SL2_3.Demo12_InputUI.Chapter02_02_01">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_01" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--用户友好的输入界面-->
+        <activity android:name=".Book2.Chapter02.SL2_3.Demo13_ButtonTest.Chapter02_03_02">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_02" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--用户友好的输入界面-->
+        <activity android:name=".Book2.Chapter02.SL2_4.Demo14_CheckButtonTest.Chapter02_03_03">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_03" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--强大的图片按钮-->
+        <activity android:name=".Book2.Chapter02.SL2_4.Demo15_ImageButtonTest.Chapter02_03_04">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_04" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--强大的图片按钮-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo16_QuickContactBadgeTest.Chapter02_03_05">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_05" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--改变分隔条、基本数组的ListView-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo17_SimpleListViewTest.Chapter02_03_06">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_06" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--改使用ArrayAdapter创建ListView-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo18_ArrayAdapterTest.Chapter02_03_07">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_07" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--使用SimpleAdapter创建ListView-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo19_SimpleAdapterTest.Chapter02_03_08">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_08" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--P100 扩展BaseAdapter实现不存储列表项的ListView-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo20_BaseAdapterTest.Chapter02_03_09">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_09" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
+    </application>
+
+</manifest>
