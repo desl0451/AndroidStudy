@@ -12,7 +12,7 @@ public class Book2ChapterDirectory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapterdirectory);
+        setContentView(R.layout.book2_chapter_directory);
 
         Button btn2 = (Button) findViewById(R.id.button2);
         btn2.setOnClickListener(new View.OnClickListener() {

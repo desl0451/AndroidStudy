@@ -19,7 +19,7 @@ public class Chapter02_03_03 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_03_03);
+        setContentView(R.layout.book2_chapter02_03_03);
         showText = (TextView) findViewById(R.id.show);//显示的文本
         RadioGroup rdoCheck = (RadioGroup) findViewById(R.id.rg);//选择男
         rdoCheck.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

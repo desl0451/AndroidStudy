@@ -15,7 +15,7 @@ public class Chapter02_02_02 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_02_02);
+        setContentView(R.layout.book2_chapter02_02_02);
         LinearLayout main = (LinearLayout) findViewById(R.id.book2chapter02_02_02);
         final ImageView image = new ImageView(this);
         main.addView(image);

@@ -20,7 +20,7 @@ public class Chapter03_03_14 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_01_14);
+        setContentView(R.layout.book1_chapter03_01_14);
         RadioGroup sex = (RadioGroup) findViewById(R.id.radioGroup1);
         txtSex = (TextView) findViewById(R.id.txtSex);
         sex.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

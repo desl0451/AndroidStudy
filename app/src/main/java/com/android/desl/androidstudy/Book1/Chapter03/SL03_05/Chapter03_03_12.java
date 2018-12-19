@@ -13,7 +13,7 @@ public class Chapter03_03_12 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_01_12);
+        setContentView(R.layout.book1_chapter03_01_12);
 
         Button button = (Button) findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {

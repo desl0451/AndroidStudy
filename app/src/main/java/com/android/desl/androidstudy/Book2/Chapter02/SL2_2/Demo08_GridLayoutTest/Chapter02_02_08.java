@@ -24,7 +24,7 @@ public class Chapter02_02_08 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_02_08);
+        setContentView(R.layout.book2_chapter02_02_08);
         gridLayout = (GridLayout) findViewById(R.id.book2chapter02_02_08);
         for (int i = 0; i < chars.length; i++) {
             Button btn = new Button(this);

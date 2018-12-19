@@ -16,7 +16,7 @@ public class Chapter02_03_05 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_03_05);
+        setContentView(R.layout.book2_chapter02_03_05);
         badge = (QuickContactBadge) findViewById(R.id.badge);
         badge.assignContactFromPhone("020-88888888", false);
 

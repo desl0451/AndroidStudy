@@ -12,7 +12,7 @@ public class Chapter03_01_10 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_01_10);
+        setContentView(R.layout.book1_chapter03_01_10);
         ImageView img0 = (ImageView) findViewById(R.id.imageButton0);
         img0.setOnClickListener(new View.OnClickListener() {
             @Override

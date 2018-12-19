@@ -13,7 +13,7 @@ public class Chapter02_02_05 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_02_05);
+        setContentView(R.layout.book2_chapter02_02_05);
 
     }
 }

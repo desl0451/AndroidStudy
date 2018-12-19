@@ -21,7 +21,7 @@ public class Chapter03_03_17 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_01_17);
+        setContentView(R.layout.book1_chapter03_01_17);
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
         String result = spinner1.getSelectedItem().toString();
         Log.i("您选择的内容是:", result);

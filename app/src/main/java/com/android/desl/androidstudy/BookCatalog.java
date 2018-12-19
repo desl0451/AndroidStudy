@@ -14,15 +14,15 @@ public class BookCatalog extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bookcatalog);
-
+        setContentView(R.layout.book_catalog);
+        //##########################################################
         //进入第一本书
         Button btnA = (Button) findViewById(R.id.button1);
         btnA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setAction("book1chapterdirectory");
+                intent.setAction("book1_chapter_directory");
                 startActivity(intent);
             }
         });
@@ -33,7 +33,7 @@ public class BookCatalog extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setAction("book2chapterdirectory");
+                intent.setAction("book2_chapter_directory");
                 startActivity(intent);
             }
         });

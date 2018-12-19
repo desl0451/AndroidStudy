@@ -23,7 +23,7 @@ public class Chapter02_03_09 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_03_09);
+        setContentView(R.layout.book2_chapter02_03_09);
         listView = (ListView) findViewById(R.id.myList);
         BaseAdapter adapter = new BaseAdapter() {
             @Override

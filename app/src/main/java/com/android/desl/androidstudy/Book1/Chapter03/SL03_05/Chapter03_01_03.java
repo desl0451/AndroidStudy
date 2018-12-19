@@ -18,7 +18,7 @@ public class Chapter03_01_03 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_01_03);
+        setContentView(R.layout.book1_chapter03_01_03);
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.book1chapter03_01_03_layout);//获取XML文件中定义的线性布局管理器
         for (int i = 0; i < imagePath.length; i++) {

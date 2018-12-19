@@ -13,7 +13,7 @@ public class Book1_Chapter03_Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_main);
+        setContentView(R.layout.book1_chapter03_main);
 
         //###############################################################################
         //按钮1

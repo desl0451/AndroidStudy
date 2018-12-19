@@ -23,7 +23,7 @@ public class Chapter03_03_15 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book1chapter03_01_15);
+        setContentView(R.layout.book1_chapter03_01_15);
 
 
         CompoundButton.OnCheckedChangeListener ck_listener = new CompoundButton.OnCheckedChangeListener() {

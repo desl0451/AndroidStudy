@@ -28,7 +28,7 @@ public class Chapter02_03_08 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_03_08);
+        setContentView(R.layout.book2_chapter02_03_08);
         List<Map<String, Object>> listItems = new ArrayList<Map<String, Object>>();
         for (int i = 0; i < names.length; i++) {
             Map<String, Object> listItem = new HashMap<String, Object>();
@@ -38,7 +38,7 @@ public class Chapter02_03_08 extends AppCompatActivity {
             listItems.add(listItem);
         }
         //创建一个SimpleAdapter
-        SimpleAdapter simpleAdapter = new SimpleAdapter(this, listItems, R.layout.book2chapter02_03_08_simple_item, new String[]{"personName", "header", "desc"}, new int[]{R.id.name, R.id.header, R.id.desc});
+        SimpleAdapter simpleAdapter = new SimpleAdapter(this, listItems, R.layout.book2_chapter02_03_08_simple_item, new String[]{"personName", "header", "desc"}, new int[]{R.id.name, R.id.header, R.id.desc});
 
         ListView list = (ListView) findViewById(R.id.mylist);
 

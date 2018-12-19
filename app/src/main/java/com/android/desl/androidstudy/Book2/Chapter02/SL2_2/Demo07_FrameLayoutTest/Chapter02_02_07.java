@@ -50,7 +50,7 @@ public class Chapter02_02_07 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2chapter02_02_07);
+        setContentView(R.layout.book2_chapter02_02_07);
         for (int i = 0; i < names.length; i++) {
             views[i] = (TextView) findViewById(names[i]);
         }
