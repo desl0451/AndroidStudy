@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--style="@style/artclestyle"-->
+    <!--显示游戏条款的TextView-->
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/book1_chapter03_03_25_artclestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="90dp"
+        android:text="@string/Book1_Chapter03_03_25_artcle" />
+    <!--"我同意" 复选框-->
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/book1_chapter03_03_25_check_box"
+        android:text="我同意"
+        android:textSize="20dp" />
+
+    <!--图片按钮-->
+    <ImageButton
+        android:id="@+id/Book1_Chapter03_03_25_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:paddingTop="20dp"
+        android:src="@drawable/book1_chapter03_03_25_button_state"
+        android:visibility="invisible" />
+
+</LinearLayout>

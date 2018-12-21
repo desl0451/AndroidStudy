@@ -186,7 +186,19 @@
                 android:gravity="left"
                 android:text="@string/Book1_Chapter03_03_24" />
 
+            <Button
+                android:id="@+id/Book1_Chapter03_03_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_03_25" />
 
+            <Button
+                android:id="@+id/Book1_Chapter03_03_26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_03_26" />
         </LinearLayout>
     </ScrollView>
 

@@ -49,6 +49,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <!--1.4 第四章目录-->
+        <activity android:name=".Book1.Chapter04.Book1_Chapter04_Main">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -244,7 +252,39 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <!--示例25-->
+        <activity android:name=".Book1.Chapter03.SL03_11.Chapter03_03_25">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_25" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--示例25-->
+        <activity android:name=".Book1.Chapter03.SL03_12.Chapter03_03_26">
+            <intent-filter>
+                <action android:name="Book1_Chapter03_03_26" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
+
+        <!--4.4.1-->
+        <!--示例01-->
+        <activity android:name=".Book1.Chapter04.SL04_04_01.Chapter04_04_01">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_01" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->

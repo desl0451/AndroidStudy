@@ -44,15 +44,15 @@ public class Book1ChapterDirectory extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        Button btn4 = (Button) findViewById(R.id.button4);
-//        btn4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                intent.setAction("book1chapter04main");
-//                startActivity(intent);
-//            }
-//        });
+        Button btn4 = (Button) findViewById(R.id.button4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter04_Main");
+                startActivity(intent);
+            }
+        });
 //        Button btn5 = (Button) findViewById(R.id.button5);
 //        btn5.setOnClickListener(new View.OnClickListener() {
 //            @Override

@@ -278,6 +278,25 @@ public class Book1_Chapter03_Main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //Chapter03_03_25
+        Button Book1_Chapter03_03_25 = (Button) this.findViewById(R.id.Book1_Chapter03_03_25);
+        Book1_Chapter03_03_25.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_25");
+                startActivity(intent);
+            }
+        });
+        //Chapter03_03_26
+        Button Book1_Chapter03_03_26 = (Button) this.findViewById(R.id.Book1_Chapter03_03_26);
+        Book1_Chapter03_03_26.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book1_Chapter03_03_26");
+                startActivity(intent);
+            }
+        });
     }
 }

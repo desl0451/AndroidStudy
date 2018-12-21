@@ -13,4 +13,11 @@
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">#111111</item>
     </style>
+
+
+    <!--book1_chapter03_03_25-->
+    <style name="book1_chapter03_03_25_artclestyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff6600</item>
+    </style>
 </resources>

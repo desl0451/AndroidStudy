@@ -48,7 +48,39 @@
     <string name="Book1_Chapter03_03_23">03.03.23范例1:实现跟踪鼠标单击状态的图片按钮</string>
     <string name="Book1_Chapter03_03_24">03.03.24范例2:实现带图标的ListView</string>
 
+    <string name="Book1_Chapter03_03_25">03.03.25我同意游戏条款</string>
+    <string name="Book1_Chapter03_03_25_artcle">我同意</string>
+    <string name="Book1_Chapter03_03_26">03.03.26猜猜鸡蛋放在哪只鞋子里</string>
+    <string name="Book1_Chapter03_03_26_title">放在哪里鞋子里</string>
+
+    <!--第四章-->
+    <string name="Book1_Chapter04_04_01">04.04.01自动完成文本框</string>
+
+
     <!-- #####################################################################-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- #####################################################################-->
