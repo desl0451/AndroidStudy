@@ -59,5 +59,6 @@ public class Chapter02_03_09 extends AppCompatActivity {
             }
         };
         listView.setAdapter(adapter);
+
     }
 }

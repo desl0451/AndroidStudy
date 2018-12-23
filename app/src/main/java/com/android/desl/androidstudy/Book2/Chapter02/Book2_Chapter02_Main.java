@@ -218,5 +218,27 @@ public class Book2_Chapter02_Main extends AppCompatActivity {
                 startActivity(intent14);
             }
         });
+
+        //P104 Page
+        Button Book2_Chapter02_03_10 = (Button) this.findViewById(R.id.Book2_Chapter02_03_10);
+        Book2_Chapter02_03_10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book2_Chapter02_03_10");
+                startActivity(intent);
+            }
+        });
+
+        //P105 Page
+        Button Book2_Chapter02_03_11 = (Button) this.findViewById(R.id.Book2_Chapter02_03_11);
+        Book2_Chapter02_03_11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Book2_Chapter02_03_11");
+                startActivity(intent);
+            }
+        });
     }
 }

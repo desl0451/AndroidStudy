@@ -280,11 +280,6 @@
         </activity>
 
 
-
-
-
-
-
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -462,6 +457,22 @@
         <activity android:name=".Book2.Chapter02.SL2_5.Demo20_BaseAdapterTest.Chapter02_03_09">
             <intent-filter>
                 <action android:name="Book2_Chapter02_03_09" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--P104  自动提示-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo21_AutoCompleteText.Chapter02_03_10">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_10" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--P105 带预览的图片浏览器-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo22_GridViewTest.Chapter02_03_11">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_11" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

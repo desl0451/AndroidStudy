@@ -154,6 +154,20 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="@string/Book2_Chapter02_03_09" />
+
+            <Button
+                android:id="@+id/Book2_Chapter02_03_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book2_Chapter02_03_10" />
+
+            <Button
+                android:id="@+id/Book2_Chapter02_03_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book2_Chapter02_03_11" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
