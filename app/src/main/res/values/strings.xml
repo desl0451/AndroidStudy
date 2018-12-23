@@ -101,7 +101,7 @@
 
     <string name="Book2_Chapter02_03_10">02.03.10自动完成文本框</string>
     <string name="Book2_Chapter02_03_11">02.03.11带预览的图片浏览器</string>
-
+    <string name="Book2_Chapter02_03_12">02.03.12可展开的列表组件ExpandableListView</string>
     <!-- #####################################################################-->
 
 </resources>

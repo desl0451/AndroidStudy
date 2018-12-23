@@ -477,6 +477,14 @@
             </intent-filter>
         </activity>
 
+        <!--P107 可展开的列表组件ExpandableListView-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo23_ExpandableListViewTest.Chapter02_03_12">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_12" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
