@@ -37,6 +37,15 @@
             </intent-filter>
         </activity>
 
+        <!--音悦台-->
+        <activity android:name=".android.ILoveMusicApp">
+            <intent-filter>
+                <action android:name="music_down_yinyuetai" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -269,7 +278,9 @@
             </intent-filter>
         </activity>
         <!--##################################################################-->
-
+        <!--##################################################################-->
+        <!--##################################################################-->
+        <!--##################################################################-->
         <!--4.4.1-->
         <!--示例01-->
         <activity android:name=".Book1.Chapter04.SL04_04_01.Chapter04_04_01">
@@ -278,7 +289,58 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <!--4.4.2-->
+        <activity android:name=".Book1.Chapter04.SL04_04_02.Chapter04_04_02">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_02" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
+        <!--4.4.3-->
+        <!--示例03-->
+        <activity android:name=".Book1.Chapter04.SL04_04_03.Chapter04_04_03">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_03" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.4.4-->
+        <!--示例04-->
+        <activity android:name=".Book1.Chapter04.SL04_04_04.Chapter04_04_04">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_04" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.4.5-->
+        <!--示例05-->
+        <activity android:name=".Book1.Chapter04.SL04_04_05.Chapter04_04_05">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_05" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.4.6-->
+        <!--示例06-->
+        <activity android:name=".Book1.Chapter04.SL04_04_06.Chapter04_04_06">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_06" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.4.7-->
+        <!--示例07-->
+        <activity android:name=".Book1.Chapter04.SL04_04_07.Chapter04_04_07">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_07" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <!--##################################################################-->
         <!--##################################################################-->

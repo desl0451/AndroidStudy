@@ -3,6 +3,7 @@
     <!-- #####################################################################-->
     <string name="Book_Name1">Android开发从入门到精通</string>
     <string name="Book_Name2">疯狂Android讲义</string>
+    <string name="Music_YinYueTai">音悦台</string>
 
 
     <!-- ##########################Android开发从入门到精通######################-->
@@ -55,6 +56,12 @@
 
     <!--第四章-->
     <string name="Book1_Chapter04_04_01">04.04.01自动完成文本框</string>
+    <string name="Book1_Chapter04_04_02">04.04.02进度条</string>
+    <string name="Book1_Chapter04_04_03">04.04.03拖动条</string>
+    <string name="Book1_Chapter04_04_04">04.04.04星级评分条</string>
+    <string name="Book1_Chapter04_04_05">04.04.05选择卡</string>
+    <string name="Book1_Chapter04_04_06">04.04.06图像切换器</string>
+    <string name="Book1_Chapter04_04_07">04.04.07网络视图</string>
 
 
     <!-- #####################################################################-->

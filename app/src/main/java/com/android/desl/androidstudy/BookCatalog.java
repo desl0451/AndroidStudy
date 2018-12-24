@@ -37,5 +37,17 @@ public class BookCatalog extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //##########################################################
+        //ILoveMusic 音悦台
+        Button btnC = (Button) findViewById(R.id.button3);
+        btnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("music_down_yinyuetai");
+                startActivity(intent);
+            }
+        });
     }
 }

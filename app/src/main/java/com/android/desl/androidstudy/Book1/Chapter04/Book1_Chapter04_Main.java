@@ -27,66 +27,66 @@ public class Book1_Chapter04_Main extends AppCompatActivity {
             }
         });
 
-//        //按钮2
-//        Button Book1_Chapter03_01_02 = (Button) this.findViewById(R.id.Book1_Chapter03_01_02);
-//        Book1_Chapter03_01_02.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent2 = new Intent();
-//                intent2.setAction("Book1_Chapter03_01_02");
-//                startActivity(intent2);
-//            }
-//        });
-//        //按钮3
-//        Button Book1_Chapter03_01_03 = (Button) this.findViewById(R.id.Book1_Chapter03_01_03);
-//        Book1_Chapter03_01_03.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent3 = new Intent();
-//                intent3.setAction("Book1_Chapter03_01_03");
-//                startActivity(intent3);
-//            }
-//        });
-//        //按钮4
-//        Button Book1_Chapter03_01_04 = (Button) this.findViewById(R.id.Book1_Chapter03_01_04);
-//        Book1_Chapter03_01_04.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent4 = new Intent();
-//                intent4.setAction("Book1_Chapter03_01_04");
-//                startActivity(intent4);
-//            }
-//        });
-//        //按钮5
-//        Button Book1_Chapter03_01_05 = (Button) this.findViewById(R.id.Book1_Chapter03_01_05);
-//        Book1_Chapter03_01_05.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent5 = new Intent();
-//                intent5.setAction("Book1_Chapter03_01_05");
-//                startActivity(intent5);
-//            }
-//        });
-//        //按钮6
-//        Button Book1_Chapter03_01_06 = (Button) this.findViewById(R.id.Book1_Chapter03_01_06);
-//        Book1_Chapter03_01_06.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent6 = new Intent();
-//                intent6.setAction("Book1_Chapter03_01_06");
-//                startActivity(intent6);
-//            }
-//        });
-//        //按钮7
-//        Button Book1_Chapter03_01_07 = (Button) this.findViewById(R.id.Book1_Chapter03_01_07);
-//        Book1_Chapter03_01_07.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent7 = new Intent();
-//                intent7.setAction("Book1_Chapter03_01_07");
-//                startActivity(intent7);
-//            }
-//        });
+        //按钮2
+        Button Book1_Chapter04_04_02 = (Button) this.findViewById(R.id.Book1_Chapter04_04_02);
+        Book1_Chapter04_04_02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent();
+                intent2.setAction("Book1_Chapter04_04_02");
+                startActivity(intent2);
+            }
+        });
+        //按钮3
+        Button Book1_Chapter04_04_03 = (Button) this.findViewById(R.id.Book1_Chapter04_04_03);
+        Book1_Chapter04_04_03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent();
+                intent3.setAction("Book1_Chapter04_04_03");
+                startActivity(intent3);
+            }
+        });
+        //按钮4
+        Button Book1_Chapter04_04_04 = (Button) this.findViewById(R.id.Book1_Chapter04_04_04);
+        Book1_Chapter04_04_04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent();
+                intent4.setAction("Book1_Chapter04_04_04");
+                startActivity(intent4);
+            }
+        });
+        //按钮5
+        Button Book1_Chapter04_04_05 = (Button) this.findViewById(R.id.Book1_Chapter04_04_05);
+        Book1_Chapter04_04_05.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent();
+                intent5.setAction("Book1_Chapter04_04_05");
+                startActivity(intent5);
+            }
+        });
+        //按钮6
+        Button Book1_Chapter04_04_06 = (Button) this.findViewById(R.id.Book1_Chapter04_04_06);
+        Book1_Chapter04_04_06.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent6 = new Intent();
+                intent6.setAction("Book1_Chapter04_04_06");
+                startActivity(intent6);
+            }
+        });
+        //按钮7
+        Button Book1_Chapter04_04_07 = (Button) this.findViewById(R.id.Book1_Chapter04_04_07);
+        Book1_Chapter04_04_07.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent7 = new Intent();
+                intent7.setAction("Book1_Chapter04_04_07");
+                startActivity(intent7);
+            }
+        });
 //        //按钮8
 //        Button Book1_Chapter03_01_08 = (Button) this.findViewById(R.id.Book1_Chapter03_01_08);
 //        Book1_Chapter03_01_08.setOnClickListener(new View.OnClickListener() {
