@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:divider="#F00"
         android:dividerHeight="2px"
-        android:entries="@array/Book2Chapter020205Books"
+        android:entries="@array/Book2_Chapter02_02_05_Books"
         android:headerDividersEnabled="false">
 
     </ListView>

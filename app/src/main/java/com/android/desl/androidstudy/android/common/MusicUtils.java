@@ -1,4 +1,4 @@
-package com.android.desl.androidstudy.android;
+package com.android.desl.androidstudy.android.common;
 
 import android.util.Log;
 

@@ -547,6 +547,13 @@
             </intent-filter>
         </activity>
 
+        <!--P111 让用户选择-->
+        <activity android:name=".Book2.Chapter02.SL2_5.Demo24_SpinnerTest.Chapter02_03_13">
+            <intent-filter>
+                <action android:name="Book2_Chapter02_03_13" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
