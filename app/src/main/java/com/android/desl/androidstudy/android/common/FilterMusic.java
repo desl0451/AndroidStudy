@@ -16,24 +16,24 @@ public class FilterMusic {
         List<Music> mulist = new ArrayList<Music>();
         try {
             // 创建 Pattern 对象
-            Pattern pattern1 = Pattern.compile("\"id\":\\d*,\"title\":");
+            Pattern pattern1 = Pattern.compile("id\":(\\d+),\"title");
             Pattern pattern2 = Pattern.compile("\"title\":\"\\s*\",");
             String s;
             // 现在创建 matcher 对象
             Matcher m1 = pattern1.matcher(path);
             Matcher m2 = pattern2.matcher(path);
-            int count = 0;
+
 
             while (m1.find()) {
                 Music music = new Music();
                 music.setMusicId(m1.group());
-                m2.find();
-                music.setMusicName(m2.group());
+                Log.i("内容:",""+m1.group());
+                //                music.setMusicName(m2.toString());
                 mulist.add(music);
             }
             for (int i = 0; i < mulist.size(); i++) {
                 Music m = mulist.get(i);
-                Log.i("数量:", "" + m.getMusicId() + "\t" + m.getMusicName());
+                Log.i("数量:", "" + m.getMusicId() + "\t");
             }
         } catch (Exception ex) {
             ex.printStackTrace();
