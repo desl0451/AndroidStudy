@@ -22,7 +22,7 @@ public class NetMusicHandler extends Thread {
     @Override
     public void run() {
         try {
-            String JsonPath = "http://soapi.yinyuetai.com/search/video-search?callback=jQuery110209198637949302793_1543807647534&keyword=神话&pageIndex=1&pageSize=10&offset=0&orderType=TOTALVIEWS&area=&property=&durationStart=0&durationEnd=&regdateStart=&regdateEnd=1544596502&clarityGrade=&source=&thirdSource=&_=154459648995";
+            String JsonPath = "http://soapi.yinyuetai.com/search/video-search?callback=jQuery110209198637949302793_1543807647534&keyword=number9&pageIndex=1&pageSize=10&offset=0&orderType=TOTALVIEWS&area=&property=&durationStart=0&durationEnd=&regdateStart=&regdateEnd=1544596502&clarityGrade=&source=&thirdSource=&_=154459648995";
             URL url = new URL(JsonPath);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setDoInput(true);

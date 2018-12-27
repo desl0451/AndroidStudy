@@ -6,15 +6,19 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.desl.androidstudy.R;
+import com.android.desl.androidstudy.android.entity.ImageAndText;
+import com.android.desl.androidstudy.android.entity.ImageAndTextListAdapter;
 import com.android.desl.androidstudy.android.common.FilterMusic;
 import com.android.desl.androidstudy.android.common.Music;
 import com.android.desl.androidstudy.android.common.NetMusicHandler;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -24,11 +28,14 @@ public class ILoveMusicApp extends AppCompatActivity {
     TextView txtMusicName;
     NetMusicHandler netMusicList;
     String musicListInfo = "";
+    GridView gridView;
     //保存歌曲列表集合
     List<Music> MusicList = new ArrayList<Music>();
 
     //歌曲列表过滤
     FilterMusic musicFilter = new FilterMusic();
+
+    HashMap<String, Object> map = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +54,6 @@ public class ILoveMusicApp extends AppCompatActivity {
                 netMusicList.start();
             }
         });
-
-
     }
 
 
@@ -60,7 +65,20 @@ public class ILoveMusicApp extends AppCompatActivity {
                 musicListInfo = netMusicList.message;
                 MusicList = musicFilter.LoadMusic(musicListInfo);
                 Toast.makeText(ILoveMusicApp.this, "集合数量是:" + MusicList.size(), Toast.LENGTH_LONG).show();
-
+                //LoadGridView();
+                gridView = (GridView) findViewById(R.id.gridview1);
+                List<ImageAndText> list = new ArrayList<ImageAndText>();
+                String[] paths = new String[10];
+                String[] titles = new String[10];
+                for (int i = 0; i < 10; i++) {
+                    Music music = (Music) MusicList.get(i);
+                    paths[i] = music.getMusicPic();
+                    titles[i] = music.getMusicName();
+                }
+                for (int i = 0; i < 10; i++) {
+                    list.add(new ImageAndText(paths[i], titles[i]));
+                }
+                gridView.setAdapter(new ImageAndTextListAdapter(ILoveMusicApp.this, list, gridView));
             }
         }
     };

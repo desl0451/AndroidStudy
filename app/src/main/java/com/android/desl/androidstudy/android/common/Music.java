@@ -8,6 +8,16 @@ import java.io.Serializable;
 public class Music implements Serializable {
     private String musicId;
     private String musicName;
+    private String musicPic;//图片
+
+    public String getMusicPic() {
+        return musicPic;
+    }
+
+    public void setMusicPic(String musicPic) {
+        this.musicPic = musicPic;
+    }
+
     private String musicPath;
 
     public String getMusicId() {

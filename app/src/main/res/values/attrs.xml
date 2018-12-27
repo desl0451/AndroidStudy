@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <declare-styleable name="book2_chapter02_03_14_Gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    
+</resources>

@@ -35,11 +35,12 @@
         android:layout_height="match_parent">
 
         <GridView
-            android:id="@+id/gridView1"
+            android:id="@+id/gridview1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:numColumns="4"
-            android:stretchMode="columnWidth" />
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
 
     </LinearLayout>
     <!--<VideoView-->
