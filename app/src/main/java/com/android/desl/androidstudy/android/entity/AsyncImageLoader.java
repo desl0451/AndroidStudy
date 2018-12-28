@@ -62,8 +62,8 @@ public class AsyncImageLoader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Drawable d = Drawable.createFromStream(i, "src");
-        return d;
+        Drawable drawable = Drawable.createFromStream(i, "src");
+        return drawable;
         /**
          * 加载内存卡图片
          */

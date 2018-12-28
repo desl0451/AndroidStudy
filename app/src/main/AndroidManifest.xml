@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.desl.androidstudy">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -44,8 +45,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
+        <!--音悦台播放-->
+        <activity
+            android:name=".android.AndroidPlayer"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android_player" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -566,5 +574,8 @@
         <!--##################################################################-->
         <!--##################################################################-->
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 
 </manifest>

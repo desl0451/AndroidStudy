@@ -17,7 +17,7 @@
 
             <EditText
                 android:id="@+id/txtMusicName"
-                android:layout_width="292dp"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:text="神话" />
 

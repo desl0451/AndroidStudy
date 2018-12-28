@@ -59,7 +59,7 @@ public class ImageAndTextListAdapter extends ArrayAdapter<ImageAndText> {
             }
         });
         if (cachedImage == null) {
-            imageView.setImageResource(R.drawable.book1_chapter03_01_09_email);
+            imageView.setImageResource(R.drawable.ilovemusicapp_wutu);
         } else {
             imageView.setImageDrawable(cachedImage);
         }
