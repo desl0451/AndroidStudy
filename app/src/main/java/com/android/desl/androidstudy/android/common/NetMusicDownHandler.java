@@ -2,9 +2,6 @@ package com.android.desl.androidstudy.android.common;
 
 import android.os.Handler;
 import android.util.Log;
-import android.widget.Toast;
-
-import com.android.desl.androidstudy.android.ILoveMusicApp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,24 +11,19 @@ import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class NetMusicHandler extends Thread {
-    public String musicname;
-    public String message;
+public class NetMusicDownHandler extends Thread {
+    public String SongId;
     public Handler handler;
+    public String message;
 
-    public NetMusicHandler() {
-    }
-
-    public NetMusicHandler(Handler handler, String musicname) {
+    public NetMusicDownHandler(Handler handler) {
         this.handler = handler;
-        this.musicname = musicname;
     }
 
     @Override
     public void run() {
         try {
-            String JsonPath = "http://soapi.yinyuetai.com/search/video-search?callback=jQuery110209198637949302793_1543807647534&keyword=" + musicname + "&pageIndex=1&pageSize=10&offset=0&orderType=TOTALVIEWS&area=&property=&durationStart=0&durationEnd=&regdateStart=&regdateEnd=1544596502&clarityGrade=&source=&thirdSource=&_=154459648995";
-            Log.i("读取的信息:", JsonPath.toString());
+            String JsonPath = "http://www.yinyuetai.com/insite/get-video-info?flex=true&videoId=" + SongId;
             URL url = new URL(JsonPath);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setDoInput(true);
@@ -65,3 +57,4 @@ public class NetMusicHandler extends Thread {
 
     }
 }
+

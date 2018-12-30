@@ -28,7 +28,7 @@ public class ILoveMusicApp extends AppCompatActivity {
     Button but;
     TextView textContent;
     TextView txtMusicName;
-    NetMusicHandler netMusicList;
+    NetMusicHandler netMusicList = new NetMusicHandler();
     String musicListInfo = "";
     GridView gridView;
     //保存歌曲列表集合
@@ -52,7 +52,7 @@ public class ILoveMusicApp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 /*读取歌曲列表线程*/
-                netMusicList = new NetMusicHandler(handler);
+                netMusicList = new NetMusicHandler(handler, txtMusicName.getText().toString());
                 netMusicList.start();
             }
         });
@@ -66,7 +66,7 @@ public class ILoveMusicApp extends AppCompatActivity {
             if (msg.what == 0x123) {
                 musicListInfo = netMusicList.message;
                 MusicList = musicFilter.LoadMusic(musicListInfo);
-                Toast.makeText(ILoveMusicApp.this, "集合数量是:" + MusicList.size(), Toast.LENGTH_LONG).show();
+
                 //LoadGridView();
                 gridView = (GridView) findViewById(R.id.gridview1);
                 List<ImageAndText> list = new ArrayList<ImageAndText>();
@@ -86,9 +86,10 @@ public class ILoveMusicApp extends AppCompatActivity {
                 gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Toast.makeText(ILoveMusicApp.this, "进来了:" + position, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(ILoveMusicApp.this, AndroidPlayer.class);
-//                        intent.putExtra()
+                        String urlPath = paths[position];
+                        //                        Toast.makeText(ILoveMusicApp.this, "" + urlPath, Toast.LENGTH_SHORT).show();
+                        intent.putExtra("urlPath", urlPath);
                         intent.setAction("android_player");
                         startActivity(intent);
                     }

@@ -19,7 +19,7 @@
                 android:id="@+id/txtMusicName"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:text="神话" />
+                android:text="" />
 
             <Button
                 android:id="@+id/txtFind"

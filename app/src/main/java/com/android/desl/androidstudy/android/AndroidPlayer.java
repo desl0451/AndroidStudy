@@ -1,56 +1,106 @@
 package com.android.desl.androidstudy.android;
 
+import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.android.desl.androidstudy.R;
+import com.shuyu.gsyvideoplayer.GSYVideoManager;
+import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
+import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 
 import java.io.File;
 
 public class AndroidPlayer extends AppCompatActivity {
-    public String videoPath = "";
+
+    public String urlPath;
+
+    StandardGSYVideoPlayer videoPlayer;
+
+    OrientationUtils orientationUtils;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.android_player);
-        VideoView video = (VideoView) findViewById(R.id.videoView);
-        //http://sh.yinyuetai.com/uploads/videos/common/6286015FF2C75F064B7714802A974B52.mp4?sc=9f5d42854504f4a7
-        File file = new File("sdcard/Tears.mp4");
 
-        MediaController mc = new MediaController(AndroidPlayer.this);
+        init();
+    }
 
-        Toast.makeText(AndroidPlayer.this, "视频:" + file.getAbsolutePath(), Toast.LENGTH_SHORT).show(); // 弹出消息提示框显示播放完毕
+    private void init() {
+        videoPlayer = (StandardGSYVideoPlayer) findViewById(R.id.video_player);
+        Toast.makeText(AndroidPlayer.this, "" + urlPath, Toast.LENGTH_SHORT).show();
+        String source1 = urlPath;
+        videoPlayer.setUp(source1, true, "测试视频");
 
-
-        if (file.exists()) { // 判断要播放的视频文件是否存在
-            video.setVideoPath(file.getAbsolutePath()); // 指定要播放的视频
-            //            video.setVideoURI(Uri.parse("http://sh.yinyuetai.com/uploads/videos/common/6286015FF2C75F064B7714802A974B52.mp4"));
-            video.setMediaController(mc); // 设置VideoView与MediaController相关联
-            video.requestFocus(); // 让VideoView获得焦点
-            try {
-                video.start(); // 开始播放视频
-            } catch (Exception e) {
-                e.printStackTrace(); // 输出异常信息
+        //增加封面
+        ImageView imageView = new ImageView(this);
+        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        imageView.setImageResource(R.drawable.book1_chapter03_01_03_img01);
+        videoPlayer.setThumbImageView(imageView);
+        //增加title
+        videoPlayer.getTitleTextView().setVisibility(View.VISIBLE);
+        //设置返回键
+        videoPlayer.getBackButton().setVisibility(View.VISIBLE);
+        //设置旋转
+        orientationUtils = new OrientationUtils(this, videoPlayer);
+        //设置全屏按键功能,这是使用的是选择屏幕，而不是全屏
+        videoPlayer.getFullscreenButton().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                orientationUtils.resolveByClick();
             }
-            // 为VideoView添加完成事件监听器
-            video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        });
+        //是否可以滑动调整
+        videoPlayer.setIsTouchWiget(true);
+        //设置返回按键功能
+        videoPlayer.getBackButton().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        videoPlayer.startPlayLogic();
+    }
 
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    Toast.makeText(AndroidPlayer.this, "视频播放完毕！", Toast.LENGTH_SHORT).show(); // 弹出消息提示框显示播放完毕
-                }
-            });
-        } else {
-            Toast.makeText(AndroidPlayer.this, "要播放的视频文件不存在", Toast.LENGTH_SHORT).show(); // 弹出消息提示框提示文件不存在
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        videoPlayer.onVideoPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        videoPlayer.onVideoResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        GSYVideoManager.releaseAllVideos();
+        if (orientationUtils != null)
+            orientationUtils.releaseListener();
+    }
+
+    @Override
+    public void onBackPressed() {
+        //先返回正常状态
+        if (orientationUtils.getScreenType() == ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
+            videoPlayer.getFullscreenButton().performClick();
+            return;
         }
-
-        //        videoView.setVideoURI(videoPath);
+        //释放所有
+        videoPlayer.setVideoAllCallBack(null);
+        super.onBackPressed();
     }
 }

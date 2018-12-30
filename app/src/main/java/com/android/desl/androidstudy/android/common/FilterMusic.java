@@ -12,6 +12,13 @@ import java.util.regex.Pattern;
  * 作者:追风小宝
  */
 public class FilterMusic {
+
+    public List<Music> LoadMusicPath(String path) {
+        List<Music> mulist = new ArrayList<Music>();
+        return mulist;
+    }
+
+
     public List<Music> LoadMusic(String path) {
         List<Music> mulist = new ArrayList<Music>();
         try {
@@ -20,7 +27,6 @@ public class FilterMusic {
             Pattern pattern1 = Pattern.compile("id\":(\\d+),\"title");
             Pattern pattern2 = Pattern.compile("\"title\":\"[a-zA-Z\\u4e00-\\u9fa5\\s\\d-//().]+");
             Pattern pattern3 = Pattern.compile("\"headImg\":\"[//\\w\\s\\da-z.-]+");
-
 
             String s;
             // 现在创建 matcher 对象
@@ -38,12 +44,12 @@ public class FilterMusic {
 
                 mulist.add(music);
             }
-            for (int i = 0; i < mulist.size(); i++) {
-                Music m = mulist.get(i);
-                Log.i("歌曲编号:", "" + m.getMusicId() + "\t");
-                Log.i("歌曲名称:", "" + m.getMusicName() + "\t");
-                Log.i("歌曲图片:", "" + m.getMusicPic() + "\t");
-            }
+//            for (int i = 0; i < mulist.size(); i++) {
+//                Music m = mulist.get(i);
+//                Log.i("歌曲编号:", "" + m.getMusicId() + "\t");
+//                Log.i("歌曲名称:", "" + m.getMusicName() + "\t");
+//                Log.i("歌曲图片:", "" + m.getMusicPic() + "\t");
+//            }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
