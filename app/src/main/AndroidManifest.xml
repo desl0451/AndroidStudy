@@ -350,6 +350,44 @@
             </intent-filter>
         </activity>
 
+        <!--4.1.8 画廊视图-->
+        <!--示例08-->
+        <activity android:name=".Book1.Chapter04.SL04_04_08.Chapter04_04_08">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_08" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!--4.1.9 显示在标题上的进度条-->
+        <!--示例09-->
+        <activity android:name=".Book1.Chapter04.SL04_04_09.Chapter04_04_09">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_09" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.1.10 幻灯片式图片浏览器-->
+        <!--示例09-->
+        <activity android:name=".Book1.Chapter04.SL04_04_10.Chapter04_04_10">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_10" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+
+
+
+
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->

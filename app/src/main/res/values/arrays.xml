@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-
+    <!--第一本书内容-->
     <string-array name="Book1_Chapter03_01_17_Ctype">
         <item>身份证</item>
         <item>学生证</item>
@@ -18,6 +18,9 @@
         <item>连接功能</item>
     </string-array>
 
+
+
+    <!--第二本书内容-->
     <string-array name="Book2_Chapter02_02_05_Books">
         <item>疯狂Java讲义</item>
         <item>疯狂Ajax讲义</item>

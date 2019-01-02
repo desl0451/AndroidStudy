@@ -2,8 +2,14 @@
 
 
 <resources>
+
+    <!--第一本书内容-->
+    <declare-styleable name="book1_chapter04_04_10_Gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    <!--第二本书内容-->
     <declare-styleable name="book2_chapter02_03_14_Gallery">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>
-    
+
 </resources>

@@ -62,6 +62,10 @@
     <string name="Book1_Chapter04_04_05">04.04.05选择卡</string>
     <string name="Book1_Chapter04_04_06">04.04.06图像切换器</string>
     <string name="Book1_Chapter04_04_07">04.04.07网络视图</string>
+    <string name="Book1_Chapter04_04_08">04.04.08画廊视图</string>
+    <string name="Book1_Chapter04_04_09">04.04.09显示在标题上的进度条</string>
+    <string name="Book1_Chapter04_04_10">04.04.10幻灯片式图片浏览器</string>
+    <string name="Book1_Chapter04_04_11">04.04.11Toast显示消息提示框</string>
 
 
     <!-- #####################################################################-->

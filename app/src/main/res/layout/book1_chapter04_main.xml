@@ -65,33 +65,33 @@
                 android:gravity="left"
                 android:text="@string/Book1_Chapter04_04_07" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_08"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_08" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter04_04_08" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_09"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_09" />-->
+            <Button
+            android:id="@+id/Book1_Chapter04_04_09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/Book1_Chapter04_04_09" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_10"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_10" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_10" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_11"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_11" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter04_04_11" />
 
             <!--<Button-->
             <!--android:id="@+id/Book1_Chapter03_01_12"-->

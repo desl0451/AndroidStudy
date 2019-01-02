@@ -51,40 +51,40 @@ public class Chapter04_04_07 extends AppCompatActivity {
             map.put("title", title[i]);
             listItems.add(map);
         }
-        //        SimpleAdapter adapter = new SimpleAdapter(this, listItems, R.layout.book1_chapter04_04_07_item, new String[]{"title", "image"}, new int[]{R.id.title, R.id.image});
+        SimpleAdapter adapter = new SimpleAdapter(this, listItems, R.layout.book1_chapter04_04_07_item, new String[]{"title", "image"}, new int[]{R.id.title, R.id.image});
 
 
-        BaseAdapter adapter = new BaseAdapter() {
-            @Override
-            public int getCount() {
-                return imageId.length;
-            }
-
-            @Override
-            public Object getItem(int position) {
-                return position;
-            }
-
-            @Override
-            public long getItemId(int position) {
-                Toast.makeText(Chapter04_04_07.this, "您选择的ID:" + title[position], Toast.LENGTH_SHORT).show();
-                return position;
-            }
-
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                ImageView imageview;
-                if (convertView == null) {
-                    imageview = new ImageView(Chapter04_04_07.this);
-                    imageview.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-                    imageview.setPadding(5, 0, 5, 0);
-                } else {
-                    imageview = (ImageView) convertView;
-                }
-                imageview.setImageResource(imageId[position]);
-                return imageview;
-            }
-        };
+        //        BaseAdapter adapter = new BaseAdapter() {
+        //            @Override
+        //            public int getCount() {
+        //                return imageId.length;
+        //            }
+        //
+        //            @Override
+        //            public Object getItem(int position) {
+        //                return position;
+        //            }
+        //
+        //            @Override
+        //            public long getItemId(int position) {
+        //                Toast.makeText(Chapter04_04_07.this, "您选择的ID:" + title[position], Toast.LENGTH_SHORT).show();
+        //                return position;
+        //            }
+        //
+        //            @Override
+        //            public View getView(int position, View convertView, ViewGroup parent) {
+        //                ImageView imageview;
+        //                if (convertView == null) {
+        //                    imageview = new ImageView(Chapter04_04_07.this);
+        //                    imageview.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        //                    imageview.setPadding(5, 0, 5, 0);
+        //                } else {
+        //                    imageview = (ImageView) convertView;
+        //                }
+        //                imageview.setImageResource(imageId[position]);
+        //                return imageview;
+        //            }
+        //        };
         gridview.setAdapter(adapter);
     }
 }
