@@ -54,6 +54,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
+        <!--RxJava框架-->
+        <activity android:name=".RxJava.RxJavaChapterDirectory">
+            <intent-filter>
+                <action android:name="RxJava_Chapter_Directory" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--##################################################################-->
+
+
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -360,7 +374,6 @@
         </activity>
 
 
-
         <!--4.1.9 显示在标题上的进度条-->
         <!--示例09-->
         <activity android:name=".Book1.Chapter04.SL04_04_09.Chapter04_04_09">
@@ -378,14 +391,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
-
-
-
-
-
-
 
 
         <!--##################################################################-->

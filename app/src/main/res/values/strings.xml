@@ -4,9 +4,10 @@
     <string name="Book_Name1">Android开发从入门到精通</string>
     <string name="Book_Name2">疯狂Android讲义</string>
     <string name="Music_YinYueTai">音悦台</string>
+    <string name="RxJava">RxJava框架使用</string>
 
 
-    <!-- ##########################Android开发从入门到精通######################-->
+    <!-- ##########################Android开发从入门到精通Book_Name1######################-->
     <!--章节目录-->
     <string name="Book1_Chapter01">第一章</string>
     <string name="Book1_Chapter02">第二章</string>
@@ -72,7 +73,7 @@
 
 
     <!-- #####################################################################-->
-    <!-- ######## 疯狂Android讲义       ########-->
+    <!-- ##########################疯狂Android讲义   Book_Name2######################-->
     <!--章节目录-->
     <string name="Book2_Chapter01">第一章</string>
     <string name="Book2_Chapter02">第二章</string>
@@ -119,4 +120,10 @@
     <string name="Book2_Chapter02_03_14">02.03.14幻灯片式图片浏览器</string>
     <!-- #####################################################################-->
 
+
+    <!-- ##########################RxJava 框架######################-->
+    <!---->
+    <string name="RxJava_Chapter01_01_01">01.01.01</string>
+    <string name="RxJava_Chapter01_01_02">01.01.02</string>
+    <string name="RxJava_Chapter01_01_03">01.01.03</string>
 </resources>

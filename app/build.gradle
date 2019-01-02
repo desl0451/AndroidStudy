@@ -34,7 +34,7 @@ dependencies {
 
     //RxJava框架
     implementation "io.reactivex.rxjava2:rxjava:2.2.5"
-
+    compile 'io.reactivex:rxjava:1.0.10'
     //完整版引入 支持视频显示
     implementation 'com.shuyu:GSYVideoPlayer:6.0.2'
 }
