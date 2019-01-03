@@ -140,4 +140,22 @@
     <string name="RxJava_Chapter01_01_01">01.01.01</string>
     <string name="RxJava_Chapter01_01_02">01.01.02</string>
     <string name="RxJava_Chapter01_01_03">01.01.03</string>
+
+
+    <!--RxJavaSimple-->
+    <string name="RxJavaSimple_Question_Mark">\?</string>
+    <string name="RxJavaSimple_Load">加载</string>
+    <string name="RxJavaSimple_ClearMemoryCache">清空内存缓存</string>
+    <string name="RxJavaSimple_ClearMemoryAndDiskCache">清空内存和磁盘缓存</string>
+    <string name="RxJavaSimple_Dialog_Elementary">RxJava 和 Retrofit 结合使用最基本的格式：用 subscribeOn() 和 observeOn() 来控制线程，并通过 subscribe() 来触发网络请求的开始。代码大致形式：\n\napi.getData()\n&#160;&#160;&#160;&#160;.subscribeOn(Schedulers.io())\n&#160;&#160;&#160;&#160;.observeOn(AndroidSchedulers.mainThread())\n&#160;&#160;&#160;&#160;.subscribe(observer);</string>
+    <string name="RxJavaSimple_Api_Source_ZhuangBi">* 本页 Sample 使用的 API 来自 <b>装逼大全</b> zhuangbi.info</string>
+    <string name="RxJavaSimple_Title_Elementary">基本</string>
+    <string name="RxJavaSimple_Title_Map">转换(map)</string>
+    <string name="RxJavaSimple_Title_Zip">压合(zip)</string>
+
+    <string name="RxJavaSimple_Title_Token">Token(flatMap)</string>
+    <string name="RxJavaSimple_Title_Token_Advanced">Token_高级(retryWhen)</string>
+    <string name="RxJavaSimple_Title_Cache">缓存(BehaviorSubject)</string>
+
+
 </resources>

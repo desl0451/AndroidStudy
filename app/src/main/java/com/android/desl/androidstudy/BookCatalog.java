@@ -61,5 +61,7 @@ public class BookCatalog extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //##########################################################
+        //RxJava完整示例
     }
 }
