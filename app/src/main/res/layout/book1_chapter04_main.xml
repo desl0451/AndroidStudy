@@ -73,11 +73,11 @@
                 android:text="@string/Book1_Chapter04_04_08" />
 
             <Button
-            android:id="@+id/Book1_Chapter04_04_09"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="@string/Book1_Chapter04_04_09" />
+                android:id="@+id/Book1_Chapter04_04_09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter04_04_09" />
 
             <Button
                 android:id="@+id/Book1_Chapter04_04_10"
@@ -93,41 +93,41 @@
                 android:gravity="left"
                 android:text="@string/Book1_Chapter04_04_11" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_12"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_12" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter04_04_12" />
 
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_13"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_13" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter04_04_13" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_14"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_14" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_14" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_15"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_15" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter04_04_15" />
 
-            <!--<Button-->
-            <!--android:id="@+id/Book1_Chapter03_01_16"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="left"-->
-            <!--android:text="@string/Book1_Chapter03_01_16" />-->
+            <Button
+                android:id="@+id/Book1_Chapter04_04_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/Book1_Chapter03_01_16" />
 
             <!--<Button-->
             <!--android:id="@+id/Book1_Chapter03_03_17"-->

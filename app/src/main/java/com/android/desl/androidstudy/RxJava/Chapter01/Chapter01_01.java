@@ -4,6 +4,12 @@ import io.reactivex.Flowable;
 
 public class Chapter01_01 {
     public static void main(String args[]) {
-        Flowable.just("Hello World").subscribe(System.out::println);
+        int num[] = new int[]{5, 76, 87, 3};
+
+
+
+        Flowable.just(num[4]).subscribe(System.out::println);
+
+        //        System.out.println(num[4]);
     }
 }

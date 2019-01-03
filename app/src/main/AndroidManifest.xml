@@ -21,7 +21,7 @@
 
         <!--##################################################################-->
         <!--$$$$$$$$$$$$$$$$    1.章节目录   $$$$$$$$$$$$$$$$-->
-        <!--第一本书章节目录-->
+        <!--第一本书章节目录#####################################################-->
         <activity android:name=".Book1.Book1ChapterDirectory">
             <intent-filter>
                 <action android:name="book1_chapter_directory" />
@@ -30,7 +30,7 @@
         </activity>
 
 
-        <!--第二本书章节目录-->
+        <!--第二本书章节目录#####################################################-->
         <activity android:name=".Book2.Book2ChapterDirectory">
             <intent-filter>
                 <action android:name="book2_chapter_directory" />
@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
 
-        <!--音悦台-->
+        <!--音悦台#####################################################-->
         <activity android:name=".android.ILoveMusicApp">
             <intent-filter>
                 <action android:name="music_down_yinyuetai" />
@@ -56,7 +56,8 @@
         </activity>
 
 
-        <!--RxJava框架-->
+        <!--RxJava框架#####################################################-->
+        <!--章节目录-->
         <activity android:name=".RxJava.RxJavaChapterDirectory">
             <intent-filter>
                 <action android:name="RxJava_Chapter_Directory" />
@@ -64,10 +65,14 @@
             </intent-filter>
         </activity>
 
-
         <!--##################################################################-->
-
-
+        <!--第一章-->
+        <activity android:name=".RxJava.Chapter01.RxJava_Chapter01_Main">
+            <intent-filter>
+                <action android:name="RxJava_Chapter01_Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -384,7 +389,7 @@
         </activity>
 
         <!--4.1.10 幻灯片式图片浏览器-->
-        <!--示例09-->
+        <!--示例10-->
         <activity android:name=".Book1.Chapter04.SL04_04_10.Chapter04_04_10">
             <intent-filter>
                 <action android:name="Book1_Chapter04_04_10" />
@@ -392,7 +397,63 @@
             </intent-filter>
         </activity>
 
+        <!--4.1.11 使用Toast显示消息提示框-->
+        <!--示例11-->
+        <activity android:name=".Book1.Chapter04.SL04_04_11.Chapter04_04_11">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_11" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
+        <!--4.1.12使用Notification在状态栏上显示通知-->
+        <!--示例12-->
+        <activity android:name=".Book1.Chapter04.SL04_04_12.Chapter04_04_12">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_12" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Book1.Chapter04.SL04_04_12.Chapter04_04_12_ContentActivity"
+            android:label="详细内容"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!--4.1.13 使用AlertDialog创建对话框-->
+        <!--示例13-->
+        <activity android:name=".Book1.Chapter04.SL04_04_13.Chapter04_04_13">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_13" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.1.14 询问是否退出的对话框-->
+        <!--示例14-->
+        <activity android:name=".Book1.Chapter04.SL04_04_14.Chapter04_04_14">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_14" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.1.15带图标的列表对话框-->
+        <!--示例15-->
+        <activity android:name=".Book1.Chapter04.SL04_04_15.Chapter04_04_15">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_15" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--4.1.16实现访Windows 7图片预览窗格效果-->
+        <!--示例16-->
+        <activity android:name=".Book1.Chapter04.SL04_04_16.Chapter04_04_16">
+            <intent-filter>
+                <action android:name="Book1_Chapter04_04_16" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
@@ -616,9 +677,25 @@
         <!--##################################################################-->
         <!--##################################################################-->
         <!--##################################################################-->
+
+        <!--RxJava学习-->
+
+        <activity android:name=".RxJava.Chapter01.Chapter01_03">
+            <intent-filter>
+                <action android:name="RxJava_Chapter01_01_03" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
     </application>
+    <!--##################################################################-->
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--##################################################################-->
+    <!--权限设置-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!--添加操作振动器的权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>

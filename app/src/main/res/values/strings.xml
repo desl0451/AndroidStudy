@@ -67,7 +67,14 @@
     <string name="Book1_Chapter04_04_09">04.04.09显示在标题上的进度条</string>
     <string name="Book1_Chapter04_04_10">04.04.10幻灯片式图片浏览器</string>
     <string name="Book1_Chapter04_04_11">04.04.11Toast显示消息提示框</string>
+    <string name="Book1_Chapter04_04_12">04.04.12使用Notification在状态栏上显示通知</string>
+    <string name="Book1_Chapter04_04_12_hello">使用Notification在状态栏上显示信息</string>
+    <string name="Book1_Chapter04_04_12_content">今天下午17：10进行羽毛球混双比赛</string>
 
+    <string name="Book1_Chapter04_04_13">04.04.13使用AlertDialog创建对话框</string>
+    <string name="Book1_Chapter04_04_14">04.04.14询问是否退出的对话框</string>
+    <string name="Book1_Chapter04_04_15">04.04.15带图标的列表对话框</string>
+    <string name="Book1_Chapter04_04_16">04.04.16实现访Windows7图片预览窗格效果</string>
 
     <!-- #####################################################################-->
 
@@ -118,11 +125,18 @@
     <string name="Book2_Chapter02_03_13_tip">列表选择框</string>
 
     <string name="Book2_Chapter02_03_14">02.03.14幻灯片式图片浏览器</string>
+
     <!-- #####################################################################-->
 
 
     <!-- ##########################RxJava 框架######################-->
-    <!---->
+    <!--章节目录-->
+    <string name="RxJava_Chapter01">Chapter01</string>
+    <string name="RxJava_Chapter02">Chapter02</string>
+    <string name="RxJava_Chapter03">Chapter03</string>
+
+
+    <!--第一章内容-->
     <string name="RxJava_Chapter01_01_01">01.01.01</string>
     <string name="RxJava_Chapter01_01_02">01.01.02</string>
     <string name="RxJava_Chapter01_01_03">01.01.03</string>

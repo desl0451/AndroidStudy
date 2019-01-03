@@ -16,7 +16,6 @@ import io.reactivex.functions.Cancellable;
 
 /**
  * 作者:追风小宝
- * <p>
  * 日期: 2019/1/2 21:51
  */
 public class Chapter01_03 extends AppCompatActivity {

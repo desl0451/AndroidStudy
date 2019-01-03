@@ -8,22 +8,22 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/book1chapter01" />
-    <!--<Button-->
-        <!--android:id="@+id/button2"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/book1chapter02" />-->
+        android:text="@string/RxJava_Chapter01" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/RxJava_Chapter02" />
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Book1_Chapter03" />
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Book1_Chapter04" />
+        android:text="@string/RxJava_Chapter03" />
+    <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/Book1_Chapter04" />-->
     <!--<Button-->
         <!--android:id="@+id/button5"-->
         <!--android:layout_width="match_parent"-->

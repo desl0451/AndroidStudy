@@ -16,32 +16,32 @@ public class RxJavaChapterDirectory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.book2_chapter_directory);
+        setContentView(R.layout.rxjava_chapter_directory);
 
-        Button btn1 = (Button) findViewById(R.id.button1);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction("Book2_Chapter02_Main");
-                startActivity(intent);
-            }
-        });
-        Button btn2 = (Button) findViewById(R.id.button2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction("Book2_Chapter02_Main");
-                startActivity(intent);
-            }
-        });
+//        Button btn1 = (Button) findViewById(R.id.button1);
+//        btn1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                intent.setAction("Book2_Chapter02_Main");
+//                startActivity(intent);
+//            }
+//        });
+//        Button btn2 = (Button) findViewById(R.id.button2);
+//        btn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                intent.setAction("Book2_Chapter02_Main");
+//                startActivity(intent);
+//            }
+//        });
         Button btn3 = (Button) findViewById(R.id.button3);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setAction("book2chapter03main");
+                intent.setAction("RxJava_Chapter01_Main");
                 startActivity(intent);
             }
         });
