@@ -5,7 +5,7 @@
     <string name="Book_Name2">疯狂Android讲义</string>
     <string name="Music_YinYueTai">音悦台</string>
     <string name="RxJava">RxJava框架使用</string>
-
+    <string name="RxJavaSimple">RxJavaSimple示例</string>
 
     <!-- ##########################Android开发从入门到精通Book_Name1######################-->
     <!--章节目录-->
@@ -157,5 +157,6 @@
     <string name="RxJavaSimple_Title_Token_Advanced">Token_高级(retryWhen)</string>
     <string name="RxJavaSimple_Title_Cache">缓存(BehaviorSubject)</string>
 
+    <string name="RxJavaSimple_Loading_Failed">数据加载失败</string>
 
 </resources>

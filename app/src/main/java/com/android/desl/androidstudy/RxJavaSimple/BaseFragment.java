@@ -15,6 +15,9 @@ import io.reactivex.disposables.Disposable;
 public abstract class BaseFragment extends Fragment {
     protected Disposable disposable;
 
+    /**
+     * 单击按钮
+     */
     @OnClick(R.id.tipBt)
     void tip() {
         new AlertDialog.Builder(getActivity())

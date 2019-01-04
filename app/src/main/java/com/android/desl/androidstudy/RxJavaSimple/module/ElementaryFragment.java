@@ -1,19 +1,33 @@
 package com.android.desl.androidstudy.RxJavaSimple.module;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.android.desl.androidstudy.R;
 import com.android.desl.androidstudy.RxJavaSimple.BaseFragment;
 import com.android.desl.androidstudy.RxJavaSimple.adapter.ZhuangbiListAdapter;
+import com.android.desl.androidstudy.RxJavaSimple.model.ZhuangbiImage;
+import com.android.desl.androidstudy.RxJavaSimple.network.Network;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnCheckedChanged;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
+
 
 /**
  * 作者:追风小宝
@@ -22,18 +36,53 @@ import butterknife.ButterKnife;
 public class ElementaryFragment extends BaseFragment {
     @BindView(R.id.swipeRefreshLayout)
     SwipeRefreshLayout swipeRefreshLayout;
-
     @BindView(R.id.gridRv)
     RecyclerView gridRv;
+
     ZhuangbiListAdapter adapter = new ZhuangbiListAdapter();
 
+    @OnCheckedChanged({R.id.searchRb1, R.id.searchRb2, R.id.searchRb3, R.id.searchRb4})
+    void onTagChecked(RadioButton searchRb, boolean checked) {
+        if (checked) {
+            unsubscribe();
+            adapter.setImages(null);
+            swipeRefreshLayout.setRefreshing(true);
+            search(searchRb.getText().toString());
+        }
+    }
+
+    private void search(String key) {
+        disposable = Network.getZhuangbiApi()
+                .search(key)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<List<ZhuangbiImage>>() {
+                    @Override
+                    public void accept(@NonNull List<ZhuangbiImage> images) throws Exception {
+                        swipeRefreshLayout.setRefreshing(false);
+                        adapter.setImages(images);
+                    }
+                }, new Consumer<Throwable>() {
+                    @Override
+                    public void accept(@NonNull Throwable throwable) throws Exception {
+                        swipeRefreshLayout.setRefreshing(false);
+                        Toast.makeText(getActivity(), R.string.RxJavaSimple_Loading_Failed, Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.rxjavasimple_fragment_elementary, container, false);
         ButterKnife.bind(this, view);
+
         gridRv.setLayoutManager(new GridLayoutManager(getActivity(), 2));
         gridRv.setAdapter(adapter);
-        return super.onCreateView(inflater, container, savedInstanceState);
+        swipeRefreshLayout.setColorSchemeColors(Color.BLUE, Color.GREEN, Color.RED, Color.YELLOW);
+        swipeRefreshLayout.setEnabled(false);
+
+        return view;
     }
 
     @Override

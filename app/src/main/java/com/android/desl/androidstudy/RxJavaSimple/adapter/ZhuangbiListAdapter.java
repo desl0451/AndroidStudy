@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.desl.androidstudy.R;
-import com.android.desl.androidstudy.RxJavaSimple.module.ZhuangbiImage;
+import com.android.desl.androidstudy.RxJavaSimple.model.ZhuangbiImage;
 import com.bumptech.glide.Glide;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.android.desl.androidstudy.RxJavaSimple.module;
+package com.android.desl.androidstudy.RxJavaSimple.model;
 
 /**
  * 作者:追风小宝

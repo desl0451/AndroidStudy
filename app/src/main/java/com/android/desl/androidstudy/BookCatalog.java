@@ -62,6 +62,15 @@ public class BookCatalog extends AppCompatActivity {
             }
         });
         //##########################################################
-        //RxJava完整示例
+        //RxJavaSimple示例
+        Button btn5 = (Button) findViewById(R.id.button5);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("RxJavaSimple_Chapter_Directory");
+                startActivity(intent);
+            }
+        });
     }
 }

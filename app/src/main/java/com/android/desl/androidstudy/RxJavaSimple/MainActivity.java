@@ -2,7 +2,6 @@ package com.android.desl.androidstudy.RxJavaSimple;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -28,14 +27,19 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolBar;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rxjava_chapter01_01_06);
+        setContentView(R.layout.rxjavasimple_main);
         ButterKnife.bind(this);
 
         setSupportActionBar(toolBar);
 
         viewPager.setAdapter(new FragmentPagerAdapter(getFragmentManager()) {
+            @Override
+            public int getCount() {
+                return 6;
+            }
+
             @Override
             public Fragment getItem(int position) {
                 switch (position) {
@@ -56,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            @Nullable
             @Override
             public CharSequence getPageTitle(int position) {
                 switch (position) {
@@ -75,11 +78,6 @@ public class MainActivity extends AppCompatActivity {
                     default:
                         return getString(R.string.RxJavaSimple_Title_Elementary);
                 }
-            }
-
-            @Override
-            public int getCount() {
-                return 6;
             }
         });
         tabLayout.setupWithViewPager(viewPager);
