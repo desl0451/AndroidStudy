@@ -1,6 +1,6 @@
 package com.android.desl.androidstudy.RxJavaSimple.network.api;
 
-import com.android.desl.androidstudy.RxJavaSimple.model.ZhuangbiImage;
+import com.android.desl.androidstudy.RxJavaSimple.model.PicImage;
 
 import java.util.List;
 
@@ -14,5 +14,5 @@ import retrofit2.http.Query;
  */
 public interface ZhuangbiApi {
     @GET("search")
-    Observable<List<ZhuangbiImage>> search(@Query("q") String query);
+    Observable<List<PicImage>> search(@Query("q") String query);
 }

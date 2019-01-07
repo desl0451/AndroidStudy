@@ -72,5 +72,17 @@ public class BookCatalog extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //##########################################################
+        //SimpleRetrofit2
+        Button btn6 = (Button) findViewById(R.id.button6);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction("Simple_Retrofit2_GitHubMain");
+                startActivity(intent);
+            }
+        });
     }
 }

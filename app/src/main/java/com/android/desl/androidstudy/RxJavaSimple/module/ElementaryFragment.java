@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.android.desl.androidstudy.R;
 import com.android.desl.androidstudy.RxJavaSimple.BaseFragment;
 import com.android.desl.androidstudy.RxJavaSimple.adapter.ZhuangbiListAdapter;
-import com.android.desl.androidstudy.RxJavaSimple.model.ZhuangbiImage;
+import com.android.desl.androidstudy.RxJavaSimple.model.PicImage;
 import com.android.desl.androidstudy.RxJavaSimple.network.Network;
 
 import java.util.List;
@@ -56,9 +56,9 @@ public class ElementaryFragment extends BaseFragment {
                 .search(key)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<List<ZhuangbiImage>>() {
+                .subscribe(new Consumer<List<PicImage>>() {
                     @Override
-                    public void accept(@NonNull List<ZhuangbiImage> images) throws Exception {
+                    public void accept(@NonNull List<PicImage> images) throws Exception {
                         swipeRefreshLayout.setRefreshing(false);
                         adapter.setImages(images);
                     }

@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.desl.androidstudy.R;
-import com.android.desl.androidstudy.RxJavaSimple.model.ZhuangbiImage;
+import com.android.desl.androidstudy.RxJavaSimple.model.PicImage;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
  * 日期: 2019/1/3 21:38
  */
 public class ZhuangbiListAdapter extends RecyclerView.Adapter {
-    List<ZhuangbiImage> images;
+    List<PicImage> images;
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -32,7 +32,7 @@ public class ZhuangbiListAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         DebounceViewHolder debounceViewHolder = (DebounceViewHolder) holder;
-        ZhuangbiImage image = images.get(position);
+        PicImage image = images.get(position);
         Glide.with(holder.itemView.getContext()).load(image.image_url).into(debounceViewHolder.imageIv);
         debounceViewHolder.descriptionTv.setText(image.description);
     }
@@ -42,7 +42,7 @@ public class ZhuangbiListAdapter extends RecyclerView.Adapter {
         return images == null ? 0 : images.size();
     }
 
-    public void setImages(List<ZhuangbiImage> images) {
+    public void setImages(List<PicImage> images) {
         this.images = images;
         notifyDataSetChanged();
     }

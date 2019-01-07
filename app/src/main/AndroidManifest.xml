@@ -73,6 +73,14 @@
             </intent-filter>
         </activity>
 
+        <!--SimpleRetrofit2示例#####################################################-->
+        <activity android:name=".Simple.Retrofit2_01.GitHubMain">
+            <intent-filter>
+                <action android:name="Simple_Retrofit2_GitHubMain" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
 
         <!--##################################################################-->
