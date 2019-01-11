@@ -30,17 +30,13 @@ public class YinYueTaiAdapter extends RecyclerView.Adapter<YinYueTaiAdapter.YinY
     @Override
     public void onBindViewHolder(@NonNull YinYueTaiViewHolder holder, int i) {
         Music data = mList.get(i);
-//        holder.title.setText(data.getTitle());
-//        holder.abstract1.setText(data.getUserName());
-//        Glide.with(holder.image_url.getContext()).load(data.getHeadImg()).into(holder.image_url);
-
         final String title = data.getTitle();
         String userName = data.getUserName();
         String headImg = data.getHeadImg();
 
         holder.title.setText(title);
         holder.name.setText(userName);
-        headImg="http:"+headImg;
+        headImg = "http:" + headImg;
         Glide.with(holder.image_url.getContext()).load(headImg).into(holder.image_url);
 
     }
