@@ -6,23 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.android.desl.androidstudy.R;
 import com.android.desl.androidstudy.Simple.Retrofit2_02.adapter.YinYueTaiAdapter;
 import com.android.desl.androidstudy.Simple.Retrofit2_02.model.Music;
 import com.android.desl.androidstudy.Simple.Retrofit2_02.network.YinYueTaiService;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
-import org.json.JSONArray;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 import butterknife.BindView;
@@ -39,11 +31,9 @@ public class MusicMain extends AppCompatActivity {
     private YinYueTaiAdapter mAdapter;
     private static OkHttpClient okHttpClient = new OkHttpClient();
 
-    //    @BindView(R.id.rcv)
-    //    public RecyclerView mRecyclerView;
-    Music music = new Music();
-    @BindView(R.id.text)
-    public TextView textView;
+    @BindView(R.id.rcv)
+    public RecyclerView mRecyclerView;
+    List<Music> musicList = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,7 +42,7 @@ public class MusicMain extends AppCompatActivity {
         mAdapter = new YinYueTaiAdapter();
 
         ButterKnife.bind(this);
-        //        setupRecyclerView(mRecyclerView);
+        setupRecyclerView(mRecyclerView);
 
         initData();
     }
@@ -81,47 +71,54 @@ public class MusicMain extends AppCompatActivity {
                     //Log.i("显示信息内容：", "=" + result);
                     Log.i("显示信息结束：", "==========================================");
                     jsonString = jsonString.substring(0, delIndex - 2);
-
+                    //查找[
+                    int kuohao = jsonString.indexOf("[");
+                    jsonString = jsonString.substring(kuohao);
                     Gson gson = new Gson();
 
                     // json转为简单Bean
-//                    Music music = gson.fromJson(result, Music.class);
-//                    Log.i("显示信息结束：", "Json转为简单Bean===" + music);
-                    // json转为带泛型的list
-//                    List<Music> musicList = gson.fromJson(result, new TypeToken<List<Music>>() {
-//                    }.getType());
-//
+                    // Music music = gson.fromJson(jsonString, Music.class);
+                    //                    Log.i("显示信息结束：", "Json转为简单Bean===" + music);
+                    //json转为带泛型的list
+                    musicList = gson.fromJson(jsonString, new TypeToken<List<Music>>() {
+                    }.getType());
 
-                    Music[] array = new Gson().fromJson(jsonString,Music[].class);
-                    List<Music> musicList = Arrays.asList(array);
+
+                    //                    Music[] array = new Gson().fromJson(jsonString,Music[].class);
+                    //                    List<Music> musicList = Arrays.asList(array);
                     for (int i = 0; i < musicList.size(); i++) {
                         Music music = musicList.get(i);
                         Log.i("显示信息开始：", "==========================================");
-                        Log.i("显示信息内容：", "=" + music.getTitle());
+                        Log.i("显示信息标题：", "=" + music.getTitle());
+                        Log.i("显示信息用户：", "=" + music.getUserName());
+                        Log.i("显示信息图片：", "=" + music.getHeadImg());
+
                         Log.i("显示信息结束：", "==========================================");
                     }
-
-//                    //Json的解析类对象
-//                    JsonParser parser = new JsonParser();
-//                    //将JSON的String 转成一个JsonArray对象
-//                    JsonArray jsonArray = parser.parse(result).getAsJsonArray();
-//
-//                    Gson gson = new Gson();
-//                    ArrayList<Music> musicBeanList = new ArrayList<>();
-//
-//                    //加强for循环遍历JsonArray
-//                    for (JsonElement music : jsonArray) {
-//                        //使用GSON，直接转成Bean对象
-//                        Music musicBean = gson.fromJson(music, Music.class);
-//                        musicBeanList.add(musicBean);
-//                    }
-                    textView.setText(jsonString);
-//                    for (int i = 0; i < musicBeanList.size(); i++) {
-//                        Music music = musicBeanList.get(i);
-//                        Log.i("显示信息开始：", "==========================================");
-//                        Log.i("显示信息内容：", "=" + music.getTitle());
-//                        Log.i("显示信息结束：", "==========================================");
-//                    }
+                    mAdapter.setData(musicList);
+                    //                    //Json的解析类对象
+                    //                    JsonParser parser = new JsonParser();
+                    //                    //将JSON的String 转成一个JsonArray对象
+                    //                    JsonArray jsonArray = parser.parse(result).getAsJsonArray();
+                    //
+                    //                    Gson gson = new Gson();
+                    //                    ArrayList<Music> musicBeanList = new ArrayList<>();
+                    //
+                    //                    //加强for循环遍历JsonArray
+                    //                    for (JsonElement music : jsonArray) {
+                    //                        //使用GSON，直接转成Bean对象
+                    //                        Music musicBean = gson.fromJson(music, Music.class);
+                    //                        musicBeanList.add(musicBean);
+                    //                    }
+                    //textView.setText(jsonString);
+                    //                    for (int i = 0; i < musicList.size(); i++) {
+                    //                        Music music = musicList.get(i);
+                    //                        Log.i("显示信息开始：", "==========================================");
+                    //                        Log.i("显示信息内容：", "=" + music.getTitle());
+                    //                        Log.i("显示信息内容：", "=" + music.getHeadImg());
+                    //
+                    //                        Log.i("显示信息结束：", "==========================================");
+                    //                    }
                     //                    //传入路径 + 文件名
                     //                    File saveFile = new File("test.txt");
                     //                    // 判断文件是否存在，存在就删除
