@@ -38,10 +38,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //##############################################################################################
 
-    //okhttp框架
+    //okhttp框架 一个处理网络请求的开源项目,是安卓端最火热的轻量级框架,由移动支付Square公司贡献(该公司还贡献了Picasso)
     implementation("com.squareup.okhttp3:okhttp:3.12.1")
 
-    // 必要retrofit依赖
+    //必要retrofit依赖 Retrofit是Square公司开源的一个高质量高效率的HTTP库，github上面star数量最多的Android网络库就是这个。
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
 
     // 必要依赖，解析json字符所用
@@ -55,8 +55,8 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 
     //Glide是一个快速高效的Android图片加载库
-    implementation 'com.github.bumptech.glide:glide:4.1.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
     //utterknife框架
     implementation 'com.jakewharton:butterknife:9.0.0-rc3'
@@ -70,7 +70,11 @@ dependencies {
     //RxJava 绑定AndroidUI组件 RxJava binding APIs for Android's UI widgets.
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
 
-
+    //##############################################################################################
+    //UI开源类库
+    //快速ImageView的完美圆形轮廓图像  https://github.com/hdodenhof/CircleImageView
+    //circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
     //##############################################################################################
 
     //##############################################################################################

@@ -16,6 +16,7 @@ import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +29,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MusicMain extends AppCompatActivity {
+
+    private static final int DEFAULT_TIME_OUT = 5;//超时时间 5s
+    private static final int DEFAULT_READ_TIME_OUT = 10;
+
     private YinYueTaiAdapter mAdapter;
     private static OkHttpClient okHttpClient = new OkHttpClient();
 
@@ -48,6 +53,13 @@ public class MusicMain extends AppCompatActivity {
     }
 
     private void initData() {
+        // 创建 OKHttpClient
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.connectTimeout(DEFAULT_TIME_OUT, TimeUnit.SECONDS);//连接超时时间
+        builder.writeTimeout(DEFAULT_TIME_OUT, TimeUnit.SECONDS);//写操作 超时时间
+        builder.readTimeout(DEFAULT_TIME_OUT, TimeUnit.SECONDS);//读操作超时时间
+
+
         Retrofit retrofit = new Retrofit.Builder()
                 .client(okHttpClient)
                 .baseUrl("http://soapi.yinyuetai.com/")
