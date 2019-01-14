@@ -10,13 +10,13 @@ import android.util.Log;
 import com.android.desl.androidstudy.R;
 import com.android.desl.androidstudy.Simple.Retrofit2_02.adapter.YinYueTaiAdapter;
 import com.android.desl.androidstudy.Simple.Retrofit2_02.model.Music;
-import com.android.desl.androidstudy.Simple.Retrofit2_02.network.YinYueTaiService;
+import com.android.desl.androidstudy.Simple.Retrofit2_02.network.RetrofitUtil;
+import com.android.desl.androidstudy.Simple.Retrofit2_02.network.service.YinYueTaiAPI;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,18 +26,18 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MusicMain extends AppCompatActivity {
 
-    private static final int DEFAULT_TIME_OUT = 5;//超时时间 5s
-    private static final int DEFAULT_READ_TIME_OUT = 10;
 
     private YinYueTaiAdapter mAdapter;
     private static OkHttpClient okHttpClient = new OkHttpClient();
 
+    Retrofit retrofit;
+
     @BindView(R.id.rcv)
     public RecyclerView mRecyclerView;
+
     List<Music> musicList = new ArrayList<>();
 
     @Override
@@ -53,19 +53,10 @@ public class MusicMain extends AppCompatActivity {
     }
 
     private void initData() {
-        // 创建 OKHttpClient
-        OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        builder.connectTimeout(DEFAULT_TIME_OUT, TimeUnit.SECONDS);//连接超时时间
-        builder.writeTimeout(DEFAULT_TIME_OUT, TimeUnit.SECONDS);//写操作 超时时间
-        builder.readTimeout(DEFAULT_TIME_OUT, TimeUnit.SECONDS);//读操作超时时间
+        //封装RetrofitUtil类
+        Retrofit retrofit = RetrofitUtil.getInstance("http://soapi.yinyuetai.com/").getRetrofit();
 
-
-        Retrofit retrofit = new Retrofit.Builder()
-                .client(okHttpClient)
-                .baseUrl("http://soapi.yinyuetai.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        YinYueTaiService service = retrofit.create(YinYueTaiService.class);
+        YinYueTaiAPI service = retrofit.create(YinYueTaiAPI.class);
         Call<ResponseBody> call = service.getCall();
         call.enqueue(new Callback<ResponseBody>() {
             @Override

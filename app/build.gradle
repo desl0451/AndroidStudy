@@ -11,8 +11,20 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        release {
+        debug {
+            //自定义变量
+            buildConfigField("boolean", "API_ENV", "false")
+            buildConfigField("String","BASE_SERVER","\"http://www.androidstudy.com/\"")
             minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            //自定义变量
+            buildConfigField("boolean", "API_ENV", "true")
+            buildConfigField("String","BASE_SERVER","http://www.androidstudy.com/")
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -37,38 +49,45 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //##############################################################################################
-
+    //##      okhttp3                                                           ####################
     //okhttp框架 一个处理网络请求的开源项目,是安卓端最火热的轻量级框架,由移动支付Square公司贡献(该公司还贡献了Picasso)
-    implementation("com.squareup.okhttp3:okhttp:3.12.1")
-
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    //okhttp 网络请求log 拦截器非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    //##############################################################################################
+    //##      retrofit                                                          ####################
     //必要retrofit依赖 Retrofit是Square公司开源的一个高质量高效率的HTTP库，github上面star数量最多的Android网络库就是这个。
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    //RxJava 绑定AndroidUI组件 RxJava binding APIs for Android's UI widgets.
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
 
+    //##############################################################################################
+    //##      Gson                                                              ####################
     // 必要依赖，解析json字符所用
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
+    //##############################################################################################
+    //##      RxJava框架                                                        ####################
     //RxJava框架
     implementation 'io.reactivex:rxjava:1.0.10' //版本号
     implementation "io.reactivex.rxjava2:rxjava:2.0.7"
-
     // 必要RxAndroid依赖，切线程时需要用到
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    //RxJava2 请求结果适配器  必要依赖，和Rxjava结合必须用到，下面会提到
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
 
+    //##############################################################################################
+    //##      Glide 框架                                                        ####################
     //Glide是一个快速高效的Android图片加载库
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
-    //utterknife框架
+    //##############################################################################################
+    //##     butterknife框架                                                    ####################
     implementation 'com.jakewharton:butterknife:9.0.0-rc3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc3'
 
-    // 必要依赖，和Rxjava结合必须用到，下面会提到
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
-
-    // 非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
-    //RxJava 绑定AndroidUI组件 RxJava binding APIs for Android's UI widgets.
-    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    //##############################################################################################
 
     //##############################################################################################
     //UI开源类库
