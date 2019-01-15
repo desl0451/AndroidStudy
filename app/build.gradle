@@ -37,18 +37,26 @@ android {
 }
 
 dependencies {
+    //##############################################################################################
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:support-v13:28.0.0'
     implementation 'com.android.support:design:28.0.0'
+    //##############################################################################################
     //卡片式布局
     implementation 'com.android.support:cardview-v7:28.0.0'
-
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //##############################################################################################
+    //Android分包方案multidex
+    implementation 'com.android.support:multidex:1.0.1'
+
+
+
+
     //##############################################################################################
     //##      okhttp3                                                           ####################
     //okhttp框架 一个处理网络请求的开源项目,是安卓端最火热的轻量级框架,由移动支付Square公司贡献(该公司还贡献了Picasso)
