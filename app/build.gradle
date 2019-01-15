@@ -19,6 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
+            //添加自动生成BuildConfig配置信息
             //自定义变量
             buildConfigField("boolean", "API_ENV", "true")
             buildConfigField("String","BASE_SERVER","http://www.androidstudy.com/")
