@@ -17,7 +17,7 @@ public class Chapter02_02_08 extends AppCompatActivity {
     String[] chars = new String[]{
             "7", "8", "9", "➗",
             "4", "5", "6", "✖",
-            "1", "2", "3", "-",
+            "1", "", "3", "-",
             ".", "0", "=", "+"
     };
 

@@ -13,16 +13,14 @@ android {
     buildTypes {
         debug {
             //自定义变量
-            buildConfigField("boolean", "API_ENV", "false")
-            buildConfigField("String","BASE_SERVER","\"http://www.androidstudy.com/\"")
+            buildConfigField("String", "BASE_SERVER", "\"http://www.androidstudy.com/\"")
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
             //添加自动生成BuildConfig配置信息
             //自定义变量
-            buildConfigField("boolean", "API_ENV", "true")
-            buildConfigField("String","BASE_SERVER","http://www.androidstudy.com/")
+            buildConfigField("String", "BASE_SERVER", "\"http://www.androidstudy.com/\"")
             minifyEnabled false
             zipAlignEnabled true
             shrinkResources false
@@ -34,6 +32,11 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/align', 'src/main/assets']
+        }
+    }
 }
 
 dependencies {
@@ -53,9 +56,6 @@ dependencies {
     //##############################################################################################
     //Android分包方案multidex
     implementation 'com.android.support:multidex:1.0.1'
-
-
-
 
     //##############################################################################################
     //##      okhttp3                                                           ####################
