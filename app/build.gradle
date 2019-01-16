@@ -1,14 +1,21 @@
 apply plugin: 'com.android.application'
-
+//apply plugin: 'me.tatarka.retrolambda'
 android {
     compileSdkVersion 28
+    aaptOptions.cruncherEnabled = false  //scrollbar_thumb.9.png 解决图片中有.9.png格式的文件错误
+    aaptOptions.useNewCruncher = false
     defaultConfig {
         applicationId "com.android.desl.androidstudy"
-        minSdkVersion 16
+        minSdkVersion 26
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        /**添加多 dex分包支持*/
+        multiDexEnabled true
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
     }
     buildTypes {
         debug {
@@ -34,14 +41,24 @@ android {
 
     sourceSets {
         main {
-            res.srcDirs = ['src/main/res', 'src/main/align', 'src/main/assets']
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDirs=['libs']
         }
+    }
+    //通过flatDir 生成jinLib
+    repositories {
+        google() // here
+        flatDir { dirs 'libs' }
     }
 }
 
+
 dependencies {
     //##############################################################################################
+    //导入第三方jar包
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs/IMLib', include: ['*.jar'])
+    //##############################################################################################
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
@@ -110,4 +127,6 @@ dependencies {
     implementation 'com.shuyu:GSYVideoPlayer:6.0.2'
 
     //##############################################################################################
+    //融云支持
+//    implementation files('lib/IMLib/')
 }
