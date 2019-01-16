@@ -49,6 +49,10 @@ public class BaseApp extends MultiDexApplication {
         mContext.startActivity(intent);
     }
 
+    public static Context getContext() {
+        return mContext;
+    }
+
     public static List<Activity> getActivities() {
         return activities;
     }
