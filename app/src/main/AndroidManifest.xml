@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.desl.androidstudy">
 
+    <!--窗体变量-->
+    <!--是一个键值对，用来为父控件存储多余的数据-->
+    <meta-data
+        android:name="design_width"
+        android:value="720"></meta-data>
+
+    <meta-data
+        android:name="design_height"
+        android:value="1280"></meta-data>
 
     <application
         android:allowBackup="true"
@@ -722,10 +731,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
-
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -734,8 +740,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <!--读写文件权限 来将 Glide 的缓存存储到公有 SD 卡上-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!--要从本地文件夹或 DCIM 或图库中加载图片-->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
